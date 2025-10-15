@@ -7,4 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/17hL60evQqA6cIqZGuxzFYd_9Y6zsRYm1
 """
 
-print("Test code for API Wrapper")
+# test.py
+def process_data(input_text):
+    """
+    A simple function to process data
+    """
+    result = f"Processed: {input_text.upper()}"
+    return {"result": result, "status": "success"}
+
+if __name__ == "__main__":
+    # Test the function
+    print(process_data("hello world"))
